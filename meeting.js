@@ -45,3 +45,19 @@ chatBtn.addEventListener("click", function () {
 leaveBtn.addEventListener("click", function () {
     window.location.href = "index.html";
 });
+
+
+
+// Get the meeting code from the URL
+const urlParams = new URLSearchParams(window.location.search);
+
+const meetingCode = urlParams.get("code");
+
+// Display the meeting code
+const roomCode = document.getElementById("roomCode");
+
+if (meetingCode) {
+    roomCode.textContent = meetingCode;
+} else {
+    roomCode.textContent = "No code provided";
+}
