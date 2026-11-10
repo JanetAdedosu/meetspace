@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalSpace | Meeting Room</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="meeting-page">
+
+    <header class="meeting-header">
+        <h1 class="logo">PersonalSpace</h1>
+        <p>Meeting Code: <span id="roomCode"></span></p>
+    </header>
+
+    <main class="meeting-container">
+
+        <section class="video-area">
+
+            <div class="video-placeholder">
+                <div class="avatar">Y</div>
+                <h2>You</h2>
+                <p>Camera preview will appear here</p>
+            </div>
+
+        </section>
+
+        <div class="meeting-controls">
+
+            <button id="micBtn">🎤 Mute</button>
+
+            <button id="cameraBtn">📷 Stop Camera</button>
+
+            <button id="chatBtn">💬 Chat</button>
+
+            <button id="leaveBtn" class="leave-btn">
+                📞 Leave Meeting
+            </button>
+
+        </div>
+
+        <section id="chatPanel" class="chat-panel">
+            <h2>Meeting Chat</h2>
+            <p>Welcome to your PersonalSpace meeting!</p>
+        </section>
+
+    </main>
+
+    <script src="meeting.js" defer></script>
+
+</body>
+</html>
