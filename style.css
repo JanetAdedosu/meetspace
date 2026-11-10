@@ -1,0 +1,212 @@
+/* 1. Basic page settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #10172a;
+    color: white;
+    min-height: 100vh;
+}
+
+/* 2. Navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background-color: #151f35;
+}
+
+.logo {
+    color: #60a5fa;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.login-btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #60a5fa;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 3. Main hero section */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    color: #b8c3d9;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+/* 4. Meeting buttons */
+.meeting-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.meeting-actions button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.meeting-actions button:hover {
+    background-color: #2563eb;
+}
+
+.join-meeting {
+    display: flex;
+    gap: 8px;
+}
+
+.join-meeting input {
+    padding: 14px;
+    border: 1px solid #64748b;
+    border-radius: 8px;
+    background-color: #1e293b;
+    color: white;
+    outline: none;
+}
+
+.join-meeting input::placeholder {
+    color: #94a3b8;
+}
+
+/* 5. Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #94a3b8;
+}
+/* ===== MEETING ROOM DESIGN ===== */
+
+.meeting-page {
+    background-color: #0b1120;
+    min-height: 100vh;
+}
+
+/* Meeting header */
+.meeting-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #151f35;
+}
+
+.meeting-header p {
+    color: #cbd5e1;
+}
+
+/* Main meeting area */
+.meeting-container {
+    padding: 30px 5%;
+}
+
+/* Video area */
+.video-area {
+    background-color: #172033;
+    min-height: 420px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-placeholder {
+    text-align: center;
+    color: white;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #3b82f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    margin: 0 auto 15px;
+}
+
+/* Meeting controls */
+.meeting-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.meeting-controls button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #263449;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.meeting-controls button:hover {
+    background-color: #3b82f6;
+}
+
+.meeting-controls .leave-btn {
+    background-color: #dc2626;
+}
+
+.meeting-controls .leave-btn:hover {
+    background-color: #b91c1c;
+}
+
+/* Chat panel */
+.chat-panel {
+    background-color: #172033;
+    padding: 25px;
+    border-radius: 12px;
+    color: white;
+    max-width: 350px;
+    margin: 0 auto;
+    display: none;
+}
+
+.chat-panel h2 {
+    margin-bottom: 15px;
+}
